@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Sentiment Analysis</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Examples</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="title">
+            <h1><img class="speech-bubble" src="/images/speech.png"
+                    alt="a green speech bubble with a question mark">Sentiment Analysis</h1>
+        </section>
+
+        <section class="form">
+            <form class="" onsubmit="return handleSubmit(event)">
+                <p>Sentiment Analysis applies natural language processing, text
+                    analytics,
+                    and computational linguistics to identify and extract subjective information from text.<br>
+                    <br>
+                    Enter a URL to a news article or blog below to receive sentiment analysis data.
+                </p>
+                <div class="form-input">
+                    <label for="url">URL:</label>
+                    <input id="url" type="text" name="input" value="" onblur="onBlur()" placeholder="https://">
+                </div>
+
+                <input type="submit" id="submit" value="SUBMIT" onclick="return handleSubmit(event)"
+                    onsubmit="return handleSubmit(event)">
+                <h2>powered by <img src="/images/LogoMeaningCloud210x85.png" height="42" width="105"
+                        alt="logo for meaning cloud api"></h2>
+            </form>
+        </section>
+
+        <section class="results">
+            <h2>Results</h2>
+            <table>
+                <tr>
+                    <th>Text Snippet</th>
+                    <th>Polarity</th>
+                    <th>Subjectivity</th>
+                </tr>
+                <tr>
+                    <td>This is some example text</td>
+                    <td>Factual</td>
+                    <td>Negative</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
