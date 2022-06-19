@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/src/client/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/client/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/client/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/client/images/favicon/site.webmanifest">
+    <!--Title-->
+    <title>Opinion Miner</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Opinion Miner</h1>
+            <img src="/src/client/images/worker.png" height="80" width="80">
+        </div>
+    </header>
+
+    <main>
+        <section class="title">
+            <h1><img class="speech-bubble" src="/src/client/images/speech.png">Sentiment Analysis</h1>
+        </section>
+
+        <section class="form">
+            <form onsubmit="return handleSubmit(event)">
+                <p>Sentiment Analysis applies natural language processing, text
+                    analytics,
+                    and computational linguistics to identify and extract subjective information from text.<br>
+                    <br>
+                    <strong>Enter an URL to a news article or blog below to receive sentiment analysis data.</strong><br>
+                </p>
+                <div class="form-input">
+                    <label for="url">URL:</label>
+                    <input id="url" type="text" name="input" placeholder="https://">
+                </div>
+                <div class="validation"></div>
+                <div class="buttons">
+                    <button id="reset" onclick="window.location.href='/index.html'">RESET</button>
+                    <input type="submit" id="submit" value="SUBMIT" onclick="return Client.handleSubmit(event)"
+                    onsubmit="return Client.handleSubmit(event)">
+                </div>
+                
+                <h2 class="api-badge">powered by <img src="/src/client/images/LogoMeaningCloud210x85.png" height="42" width="105"></h2>
+            </form>
+        </section>
+
+        <section class="results">
+            <h3 class="results-title">Results</h3>
+            <table id="article-results">
+                <tr>
+                    <th>Article</th>
+                    <th>Agreement</th>
+                    <th>Subjectivity</th>
+                    <th>Irony</th>
+                    <th>Confidence</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <table id="text-snippets">
+                <tr>
+                    <th>Text Snippet</th>
+                    <th>Agreement</th>
+                    <th>Confidence</th>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </section>
+        <button id="scrollToTop" onclick="Client.scrollToTop()">^</button>
+    </main>
+<script type="text/javascript" src="main.js"></script></body>
+</html>
