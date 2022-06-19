@@ -1,3 +1,4 @@
+![OpinionMiner](https://user-images.githubusercontent.com/100278218/174495970-3d6c602a-04c7-4747-a3b6-210b03bf14e3.jpg)
 # Opinion Miner
 
 Opinion Miner was built as a project for Udacity's Front End Development Nanodegree. 
