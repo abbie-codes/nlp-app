@@ -1,0 +1,50 @@
+$font-stack: 'Dosis', sans-serif;
+$primary-color: #284b63;
+
+body {
+    font-family: $font-stack;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+    color: $primary-color;
+    font-size: 1.2em;
+
+    main {
+        flex: 2;
+    }
+
+    section {
+        max-width: 800px;
+        margin: 50px auto;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+
+    .speech-bubble {
+        padding: 0px 15px 20px 0px;
+    }
+}
+
+#scrollToTop {
+    font-family: $font-stack;
+    font-weight: 600;
+    font-size: 4em;
+    padding: 0;
+    margin: none;
+    display: none;
+    background-color: orange;
+    border: solid orange;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}

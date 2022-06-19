@@ -1,0 +1,53 @@
+$results-font-stack: 'Lato', sans-serif;
+$form-background: #f7f7f7;
+$form-border: #D9D9D9;
+$primary-color: #284b63;
+
+.results {
+  display: none;
+
+  .results-title {
+    font-size: 2em;
+    font-weight: 700;
+    color: $primary-color;
+    padding: 0% 0% 2% 0%;
+  } 
+}
+
+table,
+th,
+td {
+  border: 2px solid $form-border;
+  border-collapse: collapse;
+  color: #444;
+  font-weight: 400;
+  padding: 2% 0% 2% 0%;
+  text-align: center;
+  color: $primary-color;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  th {
+    font-weight: 600;
+    background: $form-background;
+  }
+
+  td {
+    font-family: $results-font-stack;
+    font-size: 1em;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+  }
+}
+
+#text-snippets th,
+td{
+  width: 20%;
+}
+
+#article-results th,
+td {
+  width: 30%;
+}
+
