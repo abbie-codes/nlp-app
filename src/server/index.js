@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(express.static('dist'))
 
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
+    res.sendFile('./src/client/views/index.html')
 })
 
 app.listen(8081, function () {
