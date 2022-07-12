@@ -3,11 +3,13 @@
 
 Opinion Miner was built as a project for Udacity's Front End Development Nanodegree. 
 
+To view the site please visit [this link](https://opinion-miner.netlify.app/)
+
 Opinion Miner uses MeaningCloud's Sentiment Analysis API to run natural language processing on external articles or blog posts. 
 
 This project uses webpack and sass styling. It uses a node.js server, and .env to disguise the API details.
 
-The webpage was built with HTML, CSS & JS. 
+The webpage was built with HTML, CSS & JS.
 
 ## Installation 
 
